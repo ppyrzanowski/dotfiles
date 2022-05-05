@@ -1,21 +1,29 @@
-vim.opt.backup = false					-- creates a backup file
+vim.opt.backup = false					      -- creates a backup file
 vim.opt.clipboard = "unnamedplus"			-- allows neovim to access the system clipboard
-vim.opt.cmdheight = 2					-- more space in the neovim command line for displaying messages
-vim.opt.conceallevel = 0				-- makes `` visisble in markdown files
+vim.opt.cmdheight = 3					        -- more space in the neovim command line for displaying messages
+vim.opt.conceallevel = 0				      -- makes `` visisble in markdown files
 vim.opt.fileencoding = "utf-8"
-vim.opt.ignorecase = true				-- ignore case in seach patterns
-
-vim.opt.showtabline = 2					-- always show tab
+vim.opt.hlsearch = true
+vim.opt.ignorecase = true				      -- ignore case in seach patterns
+vim.opt.pumheight = 10
+vim.opt.showtabline = 2					      -- always show tab
+vim.opt.smartcase = true
 vim.opt.smartindent = true
-
-
+vim.opt.splitbelow = true
+vim.opt.splitright = true
 vim.opt.termguicolors = true
-
-
-
-
-
+vim.opt.undofile = true
+vim.opt.updatetime = 750
+vim.opt.writebackup = false
+vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.cursorline = true
 vim.opt.number = true
-
-
+vim.opt.relativenumber = false
+vim.opt.numberwidth = 4
+vim.opt.signcolumn = "yes"
+vim.opt.wrap = false
+vim.opt.scrolloff = 8
+vim.opt.sidescrolloff = 8
 
