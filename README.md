@@ -27,3 +27,15 @@ To get a healthcheck:
 - Syntax highlighting
 - Language specific symbol completion (nvim-cmp)
 - Language Server Protocols (LSP)
+- Fuzzy finder (telescope.nvim)
+
+## Commands included by Plugins
+
+`:PackerInstall` - Install plugins
+
+`:LspInfo` - Info about current buffer and attatched server protocols.
+
+`:LspInstallInfo` - Install language servers from a GUI gui list.
+
+
+
