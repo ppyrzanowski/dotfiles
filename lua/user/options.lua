@@ -27,3 +27,4 @@ vim.opt.wrap = false
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
 
+vim.opt.switchbuf = "usetab"

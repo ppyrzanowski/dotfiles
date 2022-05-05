@@ -4,5 +4,8 @@ require "user.plugins"		-- Plugin configuration
 require "user.colorscheme"
 require "user.cmp"		-- Auto completion
 require "user.lsp"		-- Language Server Protocol
+require "user.telescope"
+require "user.treesitter"
+
 
 
