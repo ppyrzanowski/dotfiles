@@ -85,6 +85,9 @@ return packer.startup(function(use)
   -- TSX context aware comments
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
+  -- Git integration
+  use "lewis6991/gitsigns.nvim"
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim
