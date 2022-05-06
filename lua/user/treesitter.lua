@@ -1,4 +1,8 @@
-local configs = require("nvim-treesitter.configs")
+local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+if not status_ok then
+  return
+end
+
 configs.setup {
   ensure_installed = { "c", "lua", "python", "javascript", "typescript", "java" },
   sync_install = false,
@@ -7,7 +11,13 @@ configs.setup {
     enable = true, -- false will disable the whole extension
     disable = { "" }, -- list of language that will be disabled
     additional_vim_regex_highlighting = true,
-
   },
-  indent = { enable = true, disable = { "yaml" } },
+  indent = {
+    enable = true,
+    disable = { "yaml" }
+  },
+  context_commentstring = {
+    enable = true,
+    enable_autocmd = false,
+  }
 }

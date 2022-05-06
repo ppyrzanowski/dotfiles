@@ -79,6 +79,12 @@ return packer.startup(function(use)
   -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-autopairs"
 
+  -- Commenting
+  use "numToStr/Comment.nvim"
+
+  -- TSX context aware comments
+  use "JoosepAlviste/nvim-ts-context-commentstring"
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim
