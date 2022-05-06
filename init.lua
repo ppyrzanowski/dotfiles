@@ -7,3 +7,5 @@ require "user.lsp"		      -- Language Server Protocol
 require "user.telescope"    -- Telescope fuzzy finder configuration
 require "user.treesitter"   -- Treesitter (AST) configuration
 require "user.autopairs"    -- Smarter bracket-pairs
+require "user.comment"      -- Smart comment/uncomment and scope aware
+require "user.gitsigns"     -- Git integration
