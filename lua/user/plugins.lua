@@ -88,6 +88,10 @@ return packer.startup(function(use)
   -- Git integration
   use "lewis6991/gitsigns.nvim"
 
+  -- File explorer tree
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
+
 
 
   -- Automatically set up your configuration after cloning packer.nvim
