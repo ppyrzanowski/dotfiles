@@ -12,4 +12,3 @@ require "user.autopairs"    -- Smarter bracket-pairs
 require "user.comment"      -- Smart comment/uncomment and scope aware
 require "user.gitsigns"     -- Git integration
 require "user.nvim-tree"    -- File tree explorer
-require "null-ls"

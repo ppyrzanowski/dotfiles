@@ -16,11 +16,11 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
+-- Autocommand that reloads neovim whenever you save the _plugins.lua file
 vim.cmd [[
   augroup packer_user_config
     autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+    autocmd BufWritePost _plugins.lua source <afile> | PackerSync
   augroup end
 ]]
 
@@ -47,8 +47,10 @@ return packer.startup(function(use)
 
 
 
-  -- Colorschemes
+  -- Theme customization
   use "lunarvim/darkplus.nvim" -- similar to vscode default theme
+  
+  use "norcalli/nvim-colorizer.lua"  -- Highlight color definitions
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -67,6 +69,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable Language Server Protocols
   use "williamboman/nvim-lsp-installer" -- simple to use language server installer
   use "jose-elias-alvarez/null-ls.nvim" -- Add support for formatters, linters and langauge references
+  use "ray-x/lsp_signature.nvim" -- Add support for signatures
 
   -- Telescope
   use "nvim-telescope/telescope.nvim"
