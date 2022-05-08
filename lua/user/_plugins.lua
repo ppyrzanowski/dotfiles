@@ -1,4 +1,5 @@
 local fn = vim.fn
+-- test
 
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
@@ -40,7 +41,6 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
@@ -76,11 +76,12 @@ return packer.startup(function(use)
     "nvim-treesitter/nvim-treesitter",
     run = ":TSUpdate",
   }
+  use "nvim-treesitter/nvim-treesitter-refactor"
 
   -- Autopairs, integrates with both cmp and treesitter
   use "windwp/nvim-autopairs"
 
-  -- Commenting
+  -- Commenting (auto comment/uncomment)
   use "numToStr/Comment.nvim"
 
   -- TSX context aware comments
