@@ -2,6 +2,6 @@ local fidget = require("fidget")
 
 fidget.setup({
     text = {
-        spinner = "pipe",
+        spinner = "dots",
     }
 })
